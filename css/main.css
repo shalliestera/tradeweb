@@ -12,7 +12,7 @@ header {
 	position: relative;
 	top: 10px;
 }
-
+/* 页眉中的地址 */
 .cAddress {
 	font-style: bold;
 	height: 100px;
@@ -22,7 +22,7 @@ header {
 	top: 10px;
 	left: 10px;
 }
-
+/* 页眉中的LOGO */
 .cLogo {
 	height: 100px;
 	border: thin dotted grey;
@@ -36,10 +36,11 @@ nav {
 	font-size: 18px;
 	height: 40px;
 	width: 100%;
+	margin: 10px 10px 0px 10px;
 	border: thin dotted red;
 	position: absolute;
 	bottom: 10px;
-	text-align: center;
+	text-align: left;
 }
 
 nav ul {
