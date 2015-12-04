@@ -1,89 +1,155 @@
 body {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   font-family: Verdana, Arial, '宋体';
   font-size: 12px;
-  background-color: white;
+  background-color: #fff;
+  color: #000;
 }
 /* 页眉，包括导航条 */
 header {
-	height: 180px;  /* 固定高度 */
-	border: 1px dotted #000;
-	margin: 10px;
-	padding-bottom: 0px;
+	height: 200px;  /* 固定高度 */
+	/* border: 1px dotted #000; */
+	margin: 0px 10px 0px 10px;
+	padding: 0px;
 	position: relative;
-	top: 10px;
+	top: 0px;
 }
 /* 页眉中的地址 */
 .cAddress {
 	font-style: bold;
-	height: 100px;
+	height: 120px;
 	width: 240px;
+	line-height: 1.2em;
 	border: thin dotted grey;
 	position: absolute;
-	top: 10px;
-	left: 10px;
+	top: 0px;
+	left: 0px;
 }
 /* 页眉中的LOGO */
 .cLogo {
+	width: 250px;
 	height: 100px;
 	border: thin dotted grey;
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 0px;
+	right: 0px;
 }  /* --END 页眉 */
 
 /* 导航条 */
 nav {
-	font-size: 18px;
-	height: 40px;
-	width: 100%;
-	margin: 10px 10px 0px 10px;
-	border: thin dotted red;
-	position: absolute;
-	bottom: 10px;
-	text-align: left;
+	margin: 100px auto;
+	text-align: center;
+	position: relative;
+	top: 130px;
+}
+
+nav ul ul{
+	display: none;
+}
+
+
+nav ul li:hover > ul {
+	display: block;
 }
 
 nav ul {
-	
-}
-nav ul li {
+	background: #efefef;
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0px 20px;
+	border-radius: 10px;
 	list-style: none;
-	display: inline-block;
+	position: relative;
+	display: inline-table;
 }
 
+nav ul:after {
+	contente:"";
+	clear: both;
+	display: block;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li:hover a {
+	color: black;
+}
+
+nav ul li a {
+	display: block;
+	padding: 25px 40px;
+	color: #757575;
+	text-decoration: none;
+}
+
+nav ul ul {
+	background: #5f6975;
+	border-radius: 0px;
+	padding: 0px;
+	position: absolute;
+	top: 100%;
+}
+
+  nav ul ul li {
+	  float: none;
+	  border-top: 1px solid #6b727c;
+	  border-bottom: 1px solid #575f6a;
+	  position: relative;
+  }
+  
+    nav ul ul li a {
+		padding: 15px 40px;
+		color: #fff;
+	}
+	  nav ul ul li a:hover {
+		  background: #4b545f;
+	  }
+
+nav ul ul ul {
+	position: absolute;
+	left: 100%;
+	top: 0px;
+}
 #iMainContent {
 	margin: 30px 0px 0px 10px;
 	padding: 0px;
-	border: 1px dotted red;
+	/* border: 1px dotted red; */
 }
 
+#iMainContent h1 {
+	color: white;
+}
 #iPicDisplay {
-	height: 240px;
+	height: 340px;
 	margin: 0px;
-	border: thin solid green;
+	border: thin dotted grey;
+	background: white;
 }
 
 #iSlogan {
 	height: 240px;
     margin: 10px 0px;
-	border: medium solid blue;
+	border: thin dotted grey;
 }
 /* 产品展示 */
 #iProductDisplay {
-	height: 240px;
+	height: 340px;
 	margin: 10px 0px;
-	border: thin solid green;
+	border: thin dotted grey;
 }
 /* Latest News */
 #iLatestNews {
 	height: 200px;
     margin: 10px 0px 0px 0px;
-	border: thick dotted black;
+	border: thin dotted grey;
 }
 
 /* 页脚 */
 footer {
 	margin: 10px 0px 0px 10px;
 	height: 40px;
-	border: thin solid #000;
+	border: thin dotted grey;
 }
